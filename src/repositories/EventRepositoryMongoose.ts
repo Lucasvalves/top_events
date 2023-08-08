@@ -5,12 +5,12 @@ const eventSchema = new mongoose.Schema({
   title: String,
   location:{
     latitude: String,
-    longitude:String
+    longitude:String,
   },
   date: Date,
   createdAt:{
     type :Date,
-    default: Date.now
+    default: Date.now,
   },
   description: String,
   categories: [String],
@@ -22,7 +22,7 @@ const eventSchema = new mongoose.Schema({
   city: String,
   participants: {
     type: Array,
-    ref: 'User'
+    ref: 'User',
   }
 });
 
