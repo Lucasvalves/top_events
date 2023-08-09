@@ -4,7 +4,6 @@ export async function connect(){
     await mongoose.connect(
       'mongodb+srv://adm:LlOG4C76BLEzgzej@cluster0.oyrvmhb.mongodb.net/tickets'
     )
-    console.log('Erro to connect database')
   } catch (error) {
     console.log( 'Erro to connect database')
   }
